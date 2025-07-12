@@ -33,7 +33,7 @@ return {
         "dockerfile",
         "gitignore",
         "c",
-        "c++",
+        --"c++",
         "rust",
       },
       incremental_selection = {
