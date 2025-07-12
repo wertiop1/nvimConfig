@@ -17,6 +17,8 @@ return {
         markdown = { "prettier" },
         lua = { "stylua" },
         python = { "isort", "black" },
+        c = { "clang-format" },
+        cpp = { "clang-format" },
       },
       format_on_save = {
         lsp_fallback = true,
@@ -25,8 +27,7 @@ return {
       },
     })
 
-    vim.keymap.set({"n","v"}, "<leader>f", function()
-    
+    vim.keymap.set({ "n", "v" }, "<leader>f", function()
       conform.format({
         lsp_fallback = true,
         async = false,
