@@ -12,18 +12,20 @@ return {
     "rafamadriz/friendly-snippets",
     "onsails/lspkind.nvim",
   },
-  config = function() 
+  config = function()
     local cmp = require("cmp")
-    local lspkind = require("lspkind")
     local luasnip = require("luasnip")
-    
+
     require("luasnip.loaders.from_vscode").lazy_load()
-    
+
     cmp.setup({
       snippet = {
         expand = function(args)
           luasnip.lsp_expand(args.body)
         end,
+      },
+      completion = {
+        completeopt = "menu,menuone,noinsert"
       },
       mapping = cmp.mapping.preset.insert({
         ["<C-d>"] = cmp.mapping.scroll_docs(-4),
@@ -42,12 +44,5 @@ return {
         { name = "path" },
       }),
     })
-
-    vim.cmd([[
-    set completeopt=menuone,noinsert,noselect
-    highlight! default link CmpItemKind CmpItemMenuDefault
-    ]])
-    end,
+  end,
 }
-
-        
