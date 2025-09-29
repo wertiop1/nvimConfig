@@ -1,6 +1,7 @@
 vim.lsp.enable({
   "lua_ls",
-  "clangd",
+  -- "clangd",
+  "ccls",
   "rust-analyzer",
   "pyright",
   "bashls",
