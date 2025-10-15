@@ -24,3 +24,4 @@ o.inccommand = "split"
 o.splitright = true
 o.splitbelow = true
 o.termguicolors = true
+-- vim.cmd.colorscheme "catppuccin"

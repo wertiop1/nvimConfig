@@ -13,3 +13,4 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("wertiop.plugins")
+vim.cmd.colorscheme "catppuccin"
