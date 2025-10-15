@@ -2,8 +2,8 @@ local global = vim.g
 local o = vim.opt
 
 o.number = true
-o.relativenumber = true
-o.clipboard = "unnamedplus"
+o.relativenumber = false
+o.clipboard = "unnamed"
 o.syntax = "on"
 o.autoindent = true
 o.cursorline = true
