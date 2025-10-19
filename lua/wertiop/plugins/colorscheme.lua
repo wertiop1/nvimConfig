@@ -1,4 +1,14 @@
 return {
+
+  --  "folke/tokyonight.nvim",
+  --  lazy = false,
+  --  priority = 1000,
+  --  opts = {}
+
+
+
+  -- CATPUCCIN
+
   "catppuccin/nvim",
   lazy = false,
   name = "catppuccin",
@@ -50,5 +60,7 @@ return {
       end,
     },
   },
+
+
 
 }
