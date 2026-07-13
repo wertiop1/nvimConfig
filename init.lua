@@ -1,22 +1,27 @@
-vim.o.number = true
-vim.o.relativenumber = true
-vim.o.wrap = false
-vim.o.tabstop = 2
-vim.o.swapfile = false
-vim.o.clipboard = "unnamedplus"
+local o = vim.opt
+o.signcolumn = "yes:1"
+o.termguicolors = true
+o.swapfile = false
+o.autoindent = true
+o.expandtab = true
+o.tabstop = 2
+o.softtabstop = 2
+o.shiftwidth = 2
+o.shiftround = true
+o.list = true
+o.number = true
+o.relativenumber = true
+o.numberwidth = 2
+o.wrap = false
+o.cursorline = true
+o.scrolloff = 8
+o.inccommand = "nosplit"
+o.undodir = os.getenv('HOME') .. '/.vim/undodir'
+o.undofile = true
+o.completeopt = { 'menuone', 'popup', 'noinsert' }
+o.winborder = 'rounded'
 
-vim.g.mapleader = " "
 
-vim.keymap.set('n','<leader>o', ':update<CR> :source<CR>')
-vim.keymap.set('n','<leader>w', ':write<CR>')
-vim.keymap.set('n','<leader>q', ':quit<CR>')
+vim.cmd.filetype('plugin indent on')
 
-vim.pack.add({
-				{src = "https://github.com/vague-theme/vague.nvim"},
-				{src = "https://github.com/stevearc/oil.nvim"},
-				{src = "https://github.com/nvim-mini/mini.pick"},
-				{src = "https://github.com/neovim/nvim-lspconfig"},
-				{src = "https://github.com/OXY2DEV/markview.nvim"},
-})
 
-vim.cmd("colorscheme vague")
