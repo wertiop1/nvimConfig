@@ -48,7 +48,8 @@ vim.pack.add({
   { src = "https://github.com/saghen/blink.cmp" },
   { src = "https://github.com/echasnovski/mini.pairs" },
   --{ src = "https://github.com/MeanderingProgrammer/render-markdown.nvim" },
-  { src = "https://github.com/roerohan/mark.nvim"},
+  -- { src = "https://github.com/roerohan/mark.nvim"},
+  { src = "https://github.com/iamcco/markdown-preview.nvim" },
   { src = "https://github.com/nvim-mini/mini.icons" },
   { src = "https://github.com/jtprogru/pack-ui.nvim" },
   { src = "https://github.com/alec-gibson/nvim-tetris" },
@@ -96,8 +97,9 @@ require("mini.icons").setup()
 require("mini.pairs").setup()
 require("mini.pick").setup()
 require("oil").setup()
---require("render-markdown").setup()
-require('mark').setup()
+-- require("render-markdown").setup()
+-- require('mark').setup()
+require('markdown-preview').setup()
 
 vim.keymap.set("n", "<leader>f", "<cmd>Pick files<CR>")
 vim.keymap.set("n", "<leader>h", "<cmd>Pick help<CR>")
