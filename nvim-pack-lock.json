@@ -1,15 +1,23 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "db8ea0b7c7ab8c8f8faa3912833c1671381e6304",
+      "rev": "0f54bd78892f587db4dcf100a23eaddfc2a9df7d",
       "src": "https://github.com/saghen/blink.cmp"
     },
     "blink.lib": {
       "rev": "5876dd95deeb70aadbe9f1c0b7117a135061cdac",
       "src": "https://github.com/saghen/blink.lib"
     },
+    "mark.nvim": {
+      "rev": "25bc2bd72a9fbcc38d643dbc089ca7d5996e72bb",
+      "src": "https://github.com/roerohan/mark.nvim"
+    },
+    "mini.icons": {
+      "rev": "98faae31e9be1cc054ae63485e58ceb185efcad0",
+      "src": "https://github.com/nvim-mini/mini.icons"
+    },
     "mini.nvim": {
-      "rev": "fc5c7167adc51d5f39219e86739d5c193b777f44",
+      "rev": "a35f08f63b73f0ffac045cd175fb2a22e167c39c",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "mini.pairs": {
@@ -21,12 +29,24 @@
       "src": "https://github.com/echasnovski/mini.pick"
     },
     "nvim-lspconfig": {
-      "rev": "d5b6e3db4c17b0146f63a2fc47e2027a754b2cb1",
+      "rev": "7f87dbb4707f54117e98ab8f15d6a2975b3f13f0",
       "src": "https://github.com/neovim/nvim-lspconfig"
+    },
+    "nvim-tetris": {
+      "rev": "d17c99fb527ada98ffb0212ffc87ccda6fd4f7d9",
+      "src": "https://github.com/alec-gibson/nvim-tetris"
     },
     "oil.nvim": {
       "rev": "b73018b75affd13fa38e2fc94ef753b465f770d7",
       "src": "https://github.com/stevearc/oil.nvim"
+    },
+    "pack-ui.nvim": {
+      "rev": "de6ebc6c883079983420f8d6a23317c6febc1ac8",
+      "src": "https://github.com/jtprogru/pack-ui.nvim"
+    },
+    "render-markdown.nvim": {
+      "rev": "f422cb5c6855f150e2ddcfaf44e7157b98b34f6a",
+      "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
     },
     "tokyonight.nvim": {
       "rev": "cdc07ac78467a233fd62c493de29a17e0cf2b2b6",
@@ -43,6 +63,14 @@
     "vague.nvim": {
       "rev": "49fe06ad33d8847b931ba4279197bda222374cd1",
       "src": "https://github.com/vague2k/vague.nvim"
+    },
+    "vim-game_engine": {
+      "rev": "1a4d6126676d7a12ebe34fd3d47a9d4228b361c0",
+      "src": "https://github.com/rbtnn/vim-game_engine"
+    },
+    "vim-mario": {
+      "rev": "c984617e459d9eaebd4f42386c3e848f56ef106f",
+      "src": "https://github.com/rbtnn/vim-mario"
     },
     "which-key.nvim": {
       "rev": "3aab2147e74890957785941f0c1ad87d0a44c15a",
