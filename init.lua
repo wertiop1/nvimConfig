@@ -38,6 +38,20 @@ vim.keymap.set("n", "<leader>z", function()
   vim.o.breakindent = vim.o.wrap
 end, { desc = "Toggle line wrap" })
 
+-- MD preview
+vim.g.mkdp_filetypes = { "markdown" }
+vim.g.mkdp_port = "9000"
+vim.g.mkdp_open_ip = "127.0.0.1"
+vim.g.mkdp_open_to_the_world = 0
+vim.g.mkdp_auto_start = 0
+vim.g.mkdp_auto_close = 1
+vim.g.mkdp_echo_preview_url = 1
+vim.g.mkdp_page_title = "${name}"
+vim.g.mkdp_theme = "dark"
+
+vim.keymap.set("n", "<leader>mp", "<cmd>MarkdownPreviewToggle<CR>")
+vim.keymap.set("n", "<leader>ms", "<cmd>MarkdownPreviewStop<CR>")
+
 vim.pack.add({
   { src = "https://github.com/vague2k/vague.nvim" },
   { src = "https://github.com/stevearc/oil.nvim" },
@@ -99,7 +113,6 @@ require("mini.pick").setup()
 require("oil").setup()
 -- require("render-markdown").setup()
 -- require('mark').setup()
-require('markdown-preview').setup()
 
 vim.keymap.set("n", "<leader>f", "<cmd>Pick files<CR>")
 vim.keymap.set("n", "<leader>h", "<cmd>Pick help<CR>")
