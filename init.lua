@@ -129,7 +129,12 @@ vim.keymap.set("n", "<leader>n", function()
   end
 end, { desc = "Toggle Oil" })
 
-vim.lsp.enable({ "lua_ls", "pyright", "ruff", "ccls" })
+vim.lsp.config("clangd", {
+  cmd = {"clangd", "--background-index"},
+  root_markers = {"compile_commands.json", ".clangd", ".git"}
+})
+
+vim.lsp.enable({ "lua_ls", "pyright", "ruff", "clangd" })
 vim.keymap.set("n", "<leader>lf", function()
   vim.lsp.buf.format({ async = true })
 end, { desc = "Format File" })
